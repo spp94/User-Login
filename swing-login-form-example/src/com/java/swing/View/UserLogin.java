@@ -97,7 +97,7 @@ public class UserLogin extends JFrame {
                 String password = passwordField.getText();
                 try {
                     Connection connection = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/swing_demo",
-                        "root", "Archana*130594");
+                        "root", "root");
 
                     PreparedStatement st = (PreparedStatement) connection
                         .prepareStatement("Select username, password from student where username=? and password=?");
